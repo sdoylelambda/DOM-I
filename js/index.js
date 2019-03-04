@@ -39,11 +39,60 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 
-// let nav = document.getElementsByClassName(".nav");
-// nav.setAttribute('src', siteContent)
+let pic = document.getElementById("cta-img");
+pic.setAttribute('src', siteContent["cta"]["img-src"]);
 
-let ctaImg = document.querySelector('img-src');
-cta.src = 'DOM-I/img/header-logo.png';
+
+
+
+
+let plzwork = document.querySelector('a');
+plzwork.setAttribute('src', siteContent["nav"]["img-src"]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let nav = document.getElementsByClassName("nav");
+nav.setAttribute('src', siteContent["nav"]["nav-item-1"]);
+
+let ctaImg = document.getElementById("");
+
+const btnID = document.getElementById('button');
+btnID.textContent = "clinkk"
+
+
+
+
+const ftures = document.createElement('p');
+ftures.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+
+
+
+
+const secContent = document.querySelector('.contact');
+secContent.appendChild(ftures);
