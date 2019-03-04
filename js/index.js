@@ -41,58 +41,33 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-
+// 2nd pic
 let pic = document.getElementById("cta-img");
 pic.setAttribute('src', siteContent["cta"]["img-src"]);
 
+// 3rd pic
+let lastPic = document.getElementById("middle-img");
+lastPic.setAttribute('srs', siteContent["middle-img"]["img-src"]);
 
+// Nav 
+// let nav = document.getElementsByTagName("nav");
+// nav.setAttribute('src', siteContent["nav"]["nav-item-1"]);
+// let nav = document.getElementsById("nav");
+// nav.setAttribute('src', siteContent["nav"]["nav-item-1"]);
 
+// a tag
+let a = document.querySelector('a');
+a.setAttribute('src', siteContent["nav"]["img-src"]);
 
-
-let plzwork = document.querySelector('a');
-plzwork.setAttribute('src', siteContent["nav"]["img-src"]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let nav = document.getElementsByClassName("nav");
-nav.setAttribute('src', siteContent["nav"]["nav-item-1"]);
-
-let ctaImg = document.getElementById("");
-
+// button
 const btnID = document.getElementById('button');
 btnID.textContent = "clinkk"
 
-
-
-
+// Main Paragraph
 const ftures = document.createElement('p');
 ftures.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
 
 
 
-
-
-const secContent = document.querySelector('.contact');
-secContent.appendChild(ftures);
+// const secContent = document.querySelector('.contact');
+// secContent.appendChild(ftures);
