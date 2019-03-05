@@ -46,14 +46,10 @@ let pic = document.getElementById("cta-img");
 pic.setAttribute('src', siteContent["cta"]["img-src"]);
 
 // // 3rd pic
-// let lastPic = document.getElementById("middle-img");
-// lastPic.setAttribute('src', siteContent["middle-img"]["img-src"]);
+let lastPic = document.getElementById("middle-img");
+lastPic.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 // // Nav 
-// // let nav = document.getElementsByTagName("nav");
-// // nav.setAttribute('src', siteContent["nav"]["nav-item-1"]);
-// // let nav = document.getElementsById("nav");
-// // nav.setAttribute('src', siteContent["nav"]["nav-item-1"]);
 const navigation = document.querySelector('nav');
 navigation.children[0].textContent = 'Services';
 navigation.children[1].textContent = 'Services';
@@ -68,7 +64,7 @@ navigation.children[5].textContent = 'Services';
 
 // // button
 let btnID = document.getElementById("button");
-//btnID.textContent = ("Get Started");
+// btnID.textContent = siteContent.cta['button'];
 
 // // Main Paragraph
 // const ftures = document.createElement('p');
@@ -97,15 +93,15 @@ let btnID = document.getElementById("button");
 // ).innerHTML = siteContent['cta']['h1']
 
 // // Contact
-// const contact = document.querySelector('.contact')
-// contact.querySelector('h4').innerHTML = siteContent['contact']['contact-h4']
+// const contacts = document.querySelector('.contact')
+// contacts.querySelector('h4').innerHTML = siteContent['contact']['contact-h4']
 // const contactPtags = contact.querySelector('p')
 // contactPtags[0].innerHTML = siteContent['contact']['address']
 // contactPtags[1].innerHTML = siteContent['contact']['phone']
 // contactPtags[2].innerHTML = siteContent['contact']['email']
 
 // // Footer
-//document.querySelector('footer p').innerHTML = 'Copyright Great Idea! 2018'
+document.querySelector('footer p').innerHTML = 'Copyright Great Idea! 2018'
 
 
 
@@ -138,8 +134,8 @@ let btnID = document.getElementById("button");
 // ctaImg.src = cta("img-src");
 
 // // CTA Text
-// let ctaText = document.querySelector(".cta-text");
-// let ctaChil = ctaText.childNodes;
+let ctaText = document.querySelector(".cta-text");
+let ctaChil = ctaText.childNodes;
 
 // // for loop
 
@@ -156,7 +152,7 @@ let btnID = document.getElementById("button");
 
 //cta text
 let h1Text = document.querySelector("h1");
-h1Text.innerText = "DOM <br> is <br>  Awesome";
+h1Text.innerText = "DOM is Awesome";
 
 // Bottom Content
 // let bottomText = Array.from(document.getElementsByClassName('text-content')
